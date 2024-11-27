@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon | WebXpedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --brand-color: #f16f3b;
+        --primary-color: #f16f3b;
+        --secondary-color: #db3647;
+        --tertiary-color: #333787;
+        --quaternary-color: #343657;
+        --quinary-color: #0e0f20;
+        --light-color: #f1f1f1;
+        --text-color: #fff;
+        --instagram-color: #e4405f;
+        --instagram-hover: #f7789e;
+        --linkedin-color: #0077b5;
+        --linkedin-hover: #005582;
+      }
+      body {
+        background-color: var(--light-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Comic Neue", sans-serif;
+        overflow: hidden;
+        height: 100vh;
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color),
+          var(--tertiary-color),
+          var(--quinary-color)
+        );
+        /* background: linear-gradient(45deg, #fff, #f1f1f1, #f3f3f3, #f9f9f9); */
+        background-size: 400% 400%;
+        animation: gradientBG 5s ease infinite;
+        backdrop-filter: blur(10px);
+      }
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      body div.center {
+        width: calc(100vw - 300px);
+        max-width: 800px;
+        height: calc(100vh - 100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(40px);
+      }
+      img {
+        width: 100%;
+        max-width: 220px;
+      }
+      .gradient-text {
+        background: linear-gradient(
+          90deg,
+          var(--primary-color),
+          var(--secondary-color),
+          var(--tertiary-color),
+          var(--quinary-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-stroke: 1% var(--quinary-color);
+        text-stroke: 1% var(--quinary-color);
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        animation: bounceIn 2s infinite ease-in-out;
+      }
+
+      .social-btn {
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 1rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      .social-btn.instagram {
+        background-color: #e4405f;
+      }
+
+      .social-btn.instagram:hover {
+        background-color: #f7789e;
+        transform: scale(1.1);
+      }
+      .social-btn.linkedin {
+        background-color: #0077b5;
+      }
+
+      .social-btn.linkedin:hover {
+        background-color: #005582;
+        transform: scale(1.1);
+      }
+      @keyframes bounceIn {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="">
+        <img src="./webxpedia-dark.png" alt="" />
+        <h1 style="font-size: 90px; margin-block: 10px" class="gradient-text">
+          Coming Soon...
+        </h1>
+        <h1>We’re Building Something Amazing</h1>
+        <p>Our website is under construction. Stay tuned for updates!</p>
+        <div class="social-links" style="margin-top: 70px">
+          <a
+            href="https://www.instagram.com/webxpedia/"
+            target="_blank"
+            class="social-btn instagram"
+            >Instagram</a
+          >
+          <a
+            href="https://www.linkedin.com/company/webxpedia"
+            target="_blank"
+            class="social-btn linkedin"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="footer">
+          <p>&copy; 2024 WebXpedia. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
